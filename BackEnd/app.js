@@ -46,7 +46,7 @@ app.use((error, req, res, next) => {
 });
 
 //Set up a connection to the MongoDB atlas database using Mongoose 
-mongoose.connect('mongodb+srv://Shreya:Cookie23@cluster0-iq6e9.mongodb.net/mern?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://Shreya:{password}@cluster0-iq6e9.mongodb.net/mern?retryWrites=true&w=majority')
         .then(() => {
             app.listen(5000);
         })
